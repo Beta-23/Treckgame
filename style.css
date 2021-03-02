@@ -13,3 +13,16 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
+.header {
+	background: dodgerblue;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	color: white;
+	font-size: 30px;
+}
