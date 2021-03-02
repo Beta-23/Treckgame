@@ -26,3 +26,12 @@ h1 {
 	color: white;
 	font-size: 30px;
 }
+h2 {
+	margin-bottom: 20px;
+}
+
+.far {
+	font-size: 50px;
+	margin-right: 40px;
+	User-select: none;
+}
