@@ -13,3 +13,42 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
+.header {
+	background: dodgerblue;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	color: white;
+	font-size: 30px;
+}
+h2 {
+	margin-bottom: 20px;
+}
+
+.far {
+	font-size: 50px;
+	margin-right: 40px;
+	User-select: none;
+}
+
+.reset-icon {
+	font-size: 30px;
+	cursor: pointer;
+	margin-left: 50px;
+}
+.result-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.result-text {
+	font-size: 40px;
+	margin: unset;
+	margin-top: 20px;
+}
