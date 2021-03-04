@@ -26,6 +26,14 @@ const choices = {
     spock: { name: 'Spock', defeats: ['scissors', 'rock'] },
 };
 
+let computerChoice = '';
+
+// Random computer choice
+function computerRandomChoice() {
+    const computerChoiceNumber = Math.random();
+    console.log(computerChoiceNumber);
+}
+
 // Reset all 'selected' icons
 function resetSelected() {
     allGameIcons.forEach((icon) => {
@@ -33,9 +41,15 @@ function resetSelected() {
     });
 }
 
+// Call functions to process turn
+function checkResult(playerChoice) {
+    resetSelected();
+    computerRandomChoice();
+}
+
 // Player selection value and style
 function select(playerChoice) {
-    resetSelected();
+    checkResult();
     // Add selected styling and playerChoice
     switch (playerChoice) {
         case 'rock':
