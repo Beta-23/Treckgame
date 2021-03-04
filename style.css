@@ -52,7 +52,6 @@ h2 {
 .far {
 	font-size: 50px;
 	margin-right: 40px;
-	User-select: none;
 }
 
 #player .far,
@@ -63,8 +62,17 @@ h2 {
 
 #computer .far,
 #computer .choice {
-	color: rgb(235, 43, 52);
-	cursor: help;
+	color: #4c4c4c;
+	cursor: not-allowed;
+}
+
+#player .far:last-of-type,
+#computer .far:last-of-type {
+	margin-right: 0;
+}
+/* style triggered onClick event via function select(playerChoice) js */
+.selected {
+	color: #03c03d !important;
 }
 
 .reset-icon {
