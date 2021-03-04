@@ -71,7 +71,7 @@ h2 {
 #computer .far:last-of-type {
 	margin-right: 0;
 }
-
+/* style triggered onClick event via function select(playerChoice) js */
 .selected {
 	color: black !important;
 }
