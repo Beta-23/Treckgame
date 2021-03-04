@@ -72,7 +72,7 @@ h2 {
 }
 /* style triggered onClick event via function select(playerChoice) js */
 .selected {
-	color: black !important;
+	color: #03c03d !important;
 }
 
 .reset-icon {
