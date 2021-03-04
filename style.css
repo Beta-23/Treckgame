@@ -67,6 +67,10 @@ h2 {
 	cursor: help;
 }
 
+.selected {
+	color: black !important;
+}
+
 .reset-icon {
 	font-size: 30px;
 	cursor: pointer;
