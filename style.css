@@ -63,8 +63,8 @@ h2 {
 
 #computer .far,
 #computer .choice {
-	color: rgb(235, 43, 52);
-	cursor: help;
+	color: #4c4c4c;
+	cursor: not-allowed;
 }
 
 #player .far:last-of-type,
