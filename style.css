@@ -37,6 +37,10 @@ body {
 	align-items: center;
 }
 
+.player-container {
+	margin: 50px;
+}
+
 h1 {
 	color: white;
 	font-size: 30px;
