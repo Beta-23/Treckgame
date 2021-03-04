@@ -19,12 +19,26 @@ body {
 	align-items: center;
 }
 
+.game-container {
+	width: 530px;
+	height: 600px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
 .header {
 	background: var(--header-color);
-
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	height: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.player-container {
+	margin: 50px;
 }
 
 h1 {
@@ -39,6 +53,18 @@ h2 {
 	font-size: 50px;
 	margin-right: 40px;
 	User-select: none;
+}
+
+#player .far,
+#player .choice {
+	color: #3b4cca;
+	cursor: pointer;
+}
+
+#computer .far,
+#computer .choice {
+	color: rgb(235, 43, 52);
+	cursor: help;
 }
 
 .reset-icon {
@@ -61,6 +87,7 @@ h2 {
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
 	.game-container {
+		width: 95%;
 		height: 580px;
 	}
 
