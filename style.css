@@ -57,8 +57,14 @@ h2 {
 
 #player .far,
 #player .choice {
-	color: var(--header-color);
+	color: #3b4cca;
 	cursor: pointer;
+}
+
+#computer .far,
+#computer .choice {
+	color: rgb(235, 43, 52);
+	cursor: help;
 }
 
 .reset-icon {
