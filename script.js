@@ -26,6 +26,8 @@ const choices = {
     spock: { name: 'Spock', defeats: ['scissors', 'rock'] },
 };
 
+console.log(allGameIcons);
+
 // Player selection value and style
 function select(playerChoice) {
     // Add selected styling and playerChoice
