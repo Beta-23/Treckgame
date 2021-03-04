@@ -55,6 +55,12 @@ h2 {
 	User-select: none;
 }
 
+#player .far,
+#player .choice {
+	color: var(--header-color);
+	cursor: pointer;
+}
+
 .reset-icon {
 	font-size: 30px;
 	cursor: pointer;
