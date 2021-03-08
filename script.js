@@ -1,4 +1,4 @@
-import { startConfetti, stopConfetti, removeConfetti } from './confetti.js';
+import { startConfetti, stopConfetti, removeConfetti } from './module/confetti.js';
 
 const playerScoreEl = document.getElementById('playerScore');
 const playerChoiceEl = document.getElementById('playerChoice');
@@ -112,6 +112,7 @@ function updateScore(playerChoice) {
             resultText.textContent = 'You Won!';
             playerScoreNumber++;
             playerScoreEl.textContent = playerScoreNumber;
+            stopConfetti();
         } else {
             resultText.textContent = 'You Lost!';
             computerScoreNumber++;
