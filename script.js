@@ -79,6 +79,8 @@ function resetSelected() {
     allGameIcons.forEach((icon) => {
         icon.classList.remove('selected');
     });
+    stopConfetti();
+    removeConfetti();
 }
 
 // Reset score & playerChoice/computerChoice
@@ -102,6 +104,7 @@ function updateScore(playerChoice) {
         const choice = choices[playerChoice];
         console.log(choice.defeats.indexOf(computerChoice));
         if (choice.defeats.indexOf(computerChoice) > -1) {
+            startConfetti();
             resultText.textContent = 'You Won!';
             playerScoreNumber++;
             playerScoreEl.textContent = playerScoreNumber;
@@ -159,8 +162,8 @@ function select(playerChoice) {
 resetAll();
 
 var confetti = {
-    maxCount: 500,		//set max confetti count
-    speed: 2,			//set the particle animation speed
+    maxCount: 200,		//set max confetti count
+    speed: 5,			//set the particle animation speed
     frameInterval: 15,	//the confetti animation frame interval in milliseconds
     alpha: 1.0,			//the alpha opacity of the confetti (between 0 and 1, where 1 is opaque and 0 is invisible)
     gradient: false,	//whether to use gradients for the confetti particles
@@ -370,6 +373,4 @@ function updateParticles() {
         }
     }
 }
-
-startConfetti();
 
