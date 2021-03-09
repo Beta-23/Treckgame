@@ -112,7 +112,6 @@ function updateScore(playerChoice) {
             resultText.textContent = 'You Won!';
             playerScoreNumber++;
             playerScoreEl.textContent = playerScoreNumber;
-            stopConfetti();
         } else {
             resultText.textContent = 'You Lost!';
             computerScoreNumber++;
